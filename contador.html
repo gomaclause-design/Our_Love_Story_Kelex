@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('img/fondo.gif');
+            background-size: cover;
+            background-position: center;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            gap: 20px;
+        }
+
+        .titulo-contador {
+            color: white;
+            font-size: 32px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            margin-bottom: 10px;
+        }
+
+        #contador-aniversario {
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 20px;
+        }
+
+        .boton-azul {
+            background-color: #7d2181;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton-azul:hover { 
+            background-color: #800020;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="titulo-contador">Nuestro tiempo estando juntos</h1>
+
+    <div id="contador-aniversario">
+        Calculando días...
+    </div>
+
+    <a href="inicio.html" class="boton-azul">Volver</a>
+
+    <script>
+        const fechaInicio = new Date('2025-06-29T00:00:00').getTime();
+
+        const actualizarContador = setInterval(function() {
+            const ahora = new Date().getTime();
+            const diferencia = ahora - fechaInicio;
+
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+            document.getElementById("contador-aniversario").innerHTML = 
+                `<span style="font-size: 48px; font-weight: bold; color: #d63384;">❤️ ${dias} días ❤️</span>`;
+        }, 1000);
+    </script>
+
+</body>
+</html>
