@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('img/fondo.gif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            gap: 60px;
+        }
+
+        .fila-imagenes {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+
+        .grupo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            width: 300px;
+        }
+
+        .imagen-estilo {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .texto-imagen {
+            color: white;
+            font-size: 16px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .boton-azul {
+            background-color: #7d2181;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton-azul:hover { 
+            background-color: #800020;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fila-imagenes">
+        <a href="cartas_1.html" class="grupo">
+            <img src="img/carta1.png" alt="Carta 1" class="imagen-estilo">
+            <span class="texto-imagen">Ni siquiera yo entiendo la razón por la que te amo. Tengo tantas preguntas, pero no me cuestiono, estoy satisfecho solo con el saber que amo a una persona tan increíble como tú ❤️🩹</span>
+        </a>
+        
+        <a href="cartas_2.html" class="grupo">
+            <img src="img/carta2.png" alt="Carta 2" class="imagen-estilo">
+            <span class="texto-imagen">Ese cuponsito es 100% real no feik 👀 y lo puedes canjear cuando quieras hoy. Puedes pedirme lo que quieras para celebrar nuestro día. Porque te mereces todo lo que tengo y lo que no tengo. Eres mi mundo y lo mejor de todo. Gracias, gracias por estos 365 días de amor, de enojos, de felicidad, de tristeza, de juegos, de trasnochadas hablando y por hacerme este año entender qué es lo que realmente significa realmente el amor. Este es solo el primer año de los muchos que vamos a estar juntos. Te amo con todo mi corazón, mi reina preciosa ❤️🩹</span>
+        </a>
+        
+        <a href="cartas_3.html" class="grupo">
+            <img src="img/carta3.png" alt="Carta 3" class="imagen-estilo">
+            <span class="texto-imagen">Toca para expandir la imágen</span>
+        </a>
+    </div>
+
+    <a href="index.html" class="boton-azul">Volver</a>
+
+</body>
+</html>
