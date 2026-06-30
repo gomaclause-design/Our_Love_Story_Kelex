@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('img/fondo.gif');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            gap: 40px;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+        }
+
+        .texto-pequeno {
+            color: #f0f0f0;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-style: italic;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+            
+            max-width: 600px;
+            padding: 0 20px;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .contenedor-columnas {
+            display: flex;
+            gap: 20px;
+        }
+
+        .columna {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .boton-azul {
+            background-color: #7d2181;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton-azul:hover { 
+            background-color: #800020;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="margin-bottom: 10px;">❤️ Nuestra historia de amor ❤️</h1>
+    
+    <p class="texto-pequeno">Quiero empezar el día diciéndote algo que no me canso de pensar. De todas las decisiones de mi vida, ser tu novio ha sido la mejor de todas. Hoy cumplimos un año juntos y aunque no podamos abrazarnos o besarnos ahora mismo, nunca pienso en la distancia por todo lo que me haces sentir cada día. Eres mi persona favorita y la mejor que he conocido. Estas son solo pocas muestras de amor, porque una imagen o un texto no pueden describir realmente lo que siento por tí <3.</p>
+
+    <div class="contenedor-columnas">
+        <div class="columna">
+            <a href="cartas.html"><button class="boton-azul">Cartas</button></a>
+        </div>
+        
+        <div class="columna">
+            <a href="recuerdos.html"><button class="boton-azul">Recuerdos</button></a>
+        </div>
+        
+        <div class="columna">
+            <a href="contador.html"><button class="boton-azul">Contador</button></a>
+        </div>
+    </div>
+
+</body>
+</html>
